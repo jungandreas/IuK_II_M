@@ -4,14 +4,14 @@ self.addEventListener('install', event => {
 event.waitUntil(
 caches.open(cacheName)
 .then(cache => cache.addAll([
-'./js/main.js',
-'./js/article.js',
-'./images/newspaper.svg',
-'./css/site.css',
-'./data/latest.json',
-'./data/data-1.json',
-'./article.html',
-'./index.html'
+'js/main.js',
+'js/article.js',
+'images/newspaper.svg',
+'css/site.css',
+'data/latest.json',
+'data/data-1.json',
+'article.html',
+'index.html'
 ]))
 );
 });
