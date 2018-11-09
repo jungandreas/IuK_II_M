@@ -12,6 +12,7 @@ self.addEventListener('fetch', function(event) {
 			var req = event.request.clone();
 
 			var returnUrl = req.url.substr(0, req.url.lastIndexOf(".")) + ".webp";
+			console.log('webp sent');
 
 			event.respondWith(
 				fetch(returnUrl, {
