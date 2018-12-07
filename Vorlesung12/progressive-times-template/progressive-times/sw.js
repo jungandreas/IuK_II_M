@@ -7,11 +7,11 @@ self.addEventListener('install', event => {
     event.waitUntil(
       caches.open(cacheName)
       .then(cache => cache.addAll([
-        './js/main.js',
-        './images/newspaper.svg',
-        './css/site.css',
-        './header.html',
-        '/footer.html',
+        'js/main.js',
+        'images/newspaper.svg',
+        'css/site.css',
+        'header.html',
+        'footer.html',
         'offline-page.html'
       ]))
     );
